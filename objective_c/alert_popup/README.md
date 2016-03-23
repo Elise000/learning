@@ -50,7 +50,7 @@ This guide is setting up ***UIAlertViewController*** as a step to move on from *
                                                                     inconvenience.", nil)
                                           preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK"
                                                  style:UIAlertActionStyleCancel
                                                handler:^(UIAlertAction * action) {
                                                    abort();
