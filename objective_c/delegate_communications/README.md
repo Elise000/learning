@@ -11,7 +11,7 @@ TableViewCell.
 The communication looks something like the following UML:
 
 <br>
-!(Delegate_Example)[https://lh3.googleusercontent.com/gkax__wvft4VXQy9Pg-VzAqhCvIsf4-B9Ro9dHv4qfyCgFD-marxHklETCh6VA74ewbMmy1EyTAw_Yx_PvnbLmWGH5vfgQgYzMyLS96D6hdNrxBKs-647vgDIqxcZURPYjZpZaLte5zE8QiHLuIQTdcOooBv8qu7BVyEwQmT9KHfixMy59SA-eZkBULWcPAr4WGxSIMdDMGmYivC13HIcmH9jShKpXK0IucbZ4EOBVoEkhJCMB403JXMzzOTu5MB12nGpznxdnZ2fkk1JHElXToOE5hVCYxQnpWH0cLITnSqfLmBeYessAeB_n75FLoeumrMmM8cUQyd6o1oDIgD9li8xrDzPeO01L3ajo2LAKke_M9imWBvh-R6bxiJrvPqzq-6HUKVQmE8y_tm3TYo0HyjCCsAqZI7HprBKGfLaCpzYdWVqhGTRNmMJBb-n7OWS9TVvEVJXOebJjYQV3He_8M_LXyBHSlJCdOv869JHDxJv6nqCJHkY244F7yrJWqFpgJwLvwfgVK2zPnTzcMBSLBeojaiJLQ7EMD-honjpr8RNYnEF-THcT1JZ5lb1Jalbuym1g=w1890-h574-no]
+![Delegate_Example](https://lh3.googleusercontent.com/gkax__wvft4VXQy9Pg-VzAqhCvIsf4-B9Ro9dHv4qfyCgFD-marxHklETCh6VA74ewbMmy1EyTAw_Yx_PvnbLmWGH5vfgQgYzMyLS96D6hdNrxBKs-647vgDIqxcZURPYjZpZaLte5zE8QiHLuIQTdcOooBv8qu7BVyEwQmT9KHfixMy59SA-eZkBULWcPAr4WGxSIMdDMGmYivC13HIcmH9jShKpXK0IucbZ4EOBVoEkhJCMB403JXMzzOTu5MB12nGpznxdnZ2fkk1JHElXToOE5hVCYxQnpWH0cLITnSqfLmBeYessAeB_n75FLoeumrMmM8cUQyd6o1oDIgD9li8xrDzPeO01L3ajo2LAKke_M9imWBvh-R6bxiJrvPqzq-6HUKVQmE8y_tm3TYo0HyjCCsAqZI7HprBKGfLaCpzYdWVqhGTRNmMJBb-n7OWS9TVvEVJXOebJjYQV3He_8M_LXyBHSlJCdOv869JHDxJv6nqCJHkY244F7yrJWqFpgJwLvwfgVK2zPnTzcMBSLBeojaiJLQ7EMD-honjpr8RNYnEF-THcT1JZ5lb1Jalbuym1g=w1890-h574-no)
 
 <br><br>
 
@@ -90,7 +90,7 @@ function.
 ## Step for using the Delegate
 ### 1) Import the custom aTableViewCell.h.
 ```
-#import "aButtonCell.h"
+#import "aTableViewCell.h"
 ```
 
 <br><br>
@@ -110,7 +110,8 @@ function.
 
 ### 3) In the bTableViewController initialization part, remember to include delegate as self
 In this example, since it's an UITableViewController, the initialization part
-will be in ```tableView``` function.
+will be in ```tableView``` function. You have to assign ```self``` pointer into
+the delegate so that the ATableViewCell can call this delegate back.
 
 ```
 - (UITableViewCell *)tableView:(UITableView *)tableView
