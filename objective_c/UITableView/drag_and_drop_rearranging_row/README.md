@@ -12,7 +12,7 @@ The output looks something like this:
 ## Steps
 ### 1) Create a LongPressGestureRecognizer inside the ViewController
 
-<iframe src="https://drive.google.com/file/d/1Cz9qIsDneC2_xOS15tBimdN-YdvuB7l4Hg/preview" width="640" height="480"></iframe>
+![Create Gesture](https://lh3.googleusercontent.com/gycyKcBJM7BFkLkhkWHhmr11GMV0pySMM2wFSX1qJjDuBDBfQOuxJrnNvEjA8nEXJdemAzrYhWQNK-S1sPCoPx0fb-iXaLFA5qNeo0ZhZ56txjaB9m305BaIWtt13lQMspHPS3GcpCyhUxiJDn9coPZsSXLDwW_qaxD1RetYuAtF067oKpIoVAQLdlfwr72-L8HN4U3b_IacSI9E-s9Edq1gHZqPSipXDvOQl-hYDGJRVnzwkJknn6NpD8I7Rc7fKN5KzhajNrW00FxQ6d7-v6WByeBenyllvi9yze86BBEuiWbEcv73P1MF64F9a0nqmDLxqO1mBRCgUIypcWGlofhhnygwcBeGHUhdfD057rF1-ZahoRZOet7UUG1koD9lC0tAiXWPnpDBfDE93TjhQ6m270YJFCzZ9ZJt8ZV-DB9bRW39h8UDE_8vaCHugDowyEAhwSvPXqM-EfWBQZjzq2j-w1FRG2RJn252hYH0ESIzhnrEloIz2-8vk2BeDAuYe9fY-58c0EmrOQY9ItAlsNgi2Q_z6lEclO-y1ujjSpCGB6wNoYgoRjko7QSBexjQLUbCNg=w474-h394-no)
 
 <br>
 <hr>
