@@ -47,8 +47,27 @@
 // weak - pointer that doesn't keep the value in memory.
 @property (weak)NSString *recentSentences;
 
+// Declare your class methods here, after declaring the @property
+// Notice the "+" sign
++ (void) aClassMethod;
 
-//Declare your methods here, after delcaring the @property
-- (void) AMethod;
+// Declare your instance methods here, after declaring the class methods
+// Notice the "-" sign
+- (void) aMethod;
 
 @end
+
+/*
+ *
+ * To use a class method: it looks something like this:
+ * NOTE: you don't need to create an instance object to use the method
+ *
+ * AClassName.aClassMethod
+ *
+ *
+ * An instance method: it looks something like this:
+ *
+ * AClassName class = [[AClassName alloc] init];
+ * class.aMethod;
+ *
+ */

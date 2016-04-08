@@ -44,9 +44,13 @@
 // weak - pointer that doesn't keep the value in memory.
 @property (weak)NSString *recentSentences;
 
+// Declare your class methods here, after declaring the @property
+// Notice the "+" sign
++ (void) aClassMethod;
 
-//Declare your methods here, after delcaring the @property
-- (void) AMethod;
+// Declare your instance methods here, after declaring the class methods
+// Notice the "-" sign
+- (void) aMethod;
 
 @end
 
@@ -61,7 +65,12 @@
 }
 
 	/* Define your function here */
-- (void) AMethod
++ (void) aClassMethod
+{
+	NSLog(@"This is a class method execution!");
+}
+
+- (void) aMethod
 {
 	NSLog(@"%@", string); // using private instance variable for the class
 	return;
