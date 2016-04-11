@@ -55,7 +55,7 @@ $ curl -O https://raw.githubusercontent.com/hollowaykeanho/learning/master/rails
 
 ```
 $ chmod +x script_name.sh
-$ sh script_name.sh
+$ ./script_name.sh
 ```
 
 <br><br>
