@@ -2,6 +2,10 @@
 This guide is about setting up carrierwave with multi-upload without any
 image manipulation.
 
+<br>
+An example demo code is available in this link:
+https://github.com/hollowaykeanho/rails-carrierwave-demo
+
 <br><hr><br><br>
 
 ## Assumptions
