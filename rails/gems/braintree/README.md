@@ -391,6 +391,7 @@ All right, now you're done for the basic. You can continue to upgrade it to
 secure your app.
 
 Things that this guide did not cover are:
+
 1. Failed transaction - How do you want to handle for your customer
 2. Security - Attacks, user authentication etc.
 3. UI/UX
