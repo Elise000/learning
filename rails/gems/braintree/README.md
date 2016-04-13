@@ -24,14 +24,14 @@ https://github.com/hollowaykeanho/learning/tree/master/rails/gems/figaro
 
 <br><hr><br><br>
 
-### 1) Add Braintree gem into Gemfile.
+### 2) Add Braintree gem into Gemfile.
 ```
 gem 'braintree'
 ```
 
 <br><hr><br><br>
 
-### 2) Create an initializer file ```/config/initializers/braintree.rb```:
+### 3) Create an initializer file ```/config/initializers/braintree.rb```:
 ```
 Braintree::Configuration.environment = :sandbox
 Braintree::Configuration.logger = Logger.new('log/braintree.log')
@@ -42,7 +42,7 @@ Braintree::Configuration.private_key = ENV['BRAINTREE_PRIVATE_KEY']
 
 <br><hr><br><br>
 
-### 3) Sign up for Braintree account (in this demo, we'll be using Sandbox).
+### 4) Sign up for Braintree account (in this demo, we'll be using Sandbox).
 You can sign up for an account here: https://www.braintreepayments.com/
 .
 
@@ -52,7 +52,7 @@ be using these sensitive information in the next step.
 
 <br><hr><br><br>
 
-### 4) Insert the keys and id into ```config/application.yml```
+### 5) Insert the keys and id into ```config/application.yml```
 > **NOTE**:
 >
 > If you don't have such file, your Figaro is not setup properly. Please refer
@@ -83,7 +83,7 @@ production:
 
 <br><hr><br><br>
 
-### 5) Generate a new MVC model for 'payments'
+### 6) Generate a new MVC model for 'payments'
 We'll create a simple payment MVC for payment transaction. For rapid
 prototyping, let's keep the tracking information as minimal as possible.
 
@@ -94,7 +94,7 @@ $ rails g model payment
 
 <br><hr><br><br>
 
-### 6) Set the route for payment MVC, only new and create
+### 7) Set the route for payment MVC, only new and create
 ```
 resources payments, only: [:new, :create]
 ```
@@ -105,7 +105,7 @@ resources payments, only: [:new, :create]
 
 <br><hr><br><br>
 
-### 7) Setup the controller for new and create
+### 8) Setup the controller for new and create
 ```
 class PaymentsController < ApplicationController
   before_action do_some_security_activity_available, only: [:new, :create]
@@ -155,7 +155,7 @@ end
 
 <br><hr><br><br>
 
-### 8) Add the "Pay" button link on your order page
+### 9) Add the "Pay" button link on your order page
 There are at least 5 ways of transferring the secure token from order page to
 payment page. In there, we'll be using URL parameter transfer.
 
@@ -178,7 +178,7 @@ The link looks something like this:
 
 <br><hr><br><br>
 
-### 9) Ensures your payment form shows only static information for client in ```views/payments/new.html.erb```
+### 10) Ensures your payment form shows only static information for client in ```views/payments/new.html.erb```
 In payment page, orders are confirmed. Please ensures that you show the order's
 information only for viewing purposes. **Please avoid using text field etc**
 since we don't want to change the transaction details.
@@ -223,7 +223,7 @@ An example looks something like this:
 
 <br><hr><br><br>
 
-### 10) Add Braintree javascript header to ```views/layouts/application.html.erb```
+### 11) Add Braintree javascript header to ```views/layouts/application.html.erb```
 We'll need braintree javascript to process their payment gateway code.
 Include the following line below the javascript include tag.
 
@@ -246,7 +246,7 @@ The output looks soemthing like this:
 
 <br><hr><br><br>
 
-### 11) Add the Braintree payment codes inside the payment form
+### 12) Add the Braintree payment codes inside the payment form
 In ```views/payments/new.html.erb```, add in the Braintree div tag and its
 specific javascript code.
 
@@ -277,6 +277,7 @@ The script:
 </script>
 ```
 
+<br>
 An final output example for ```views/payments/new.html.erb``` would be:
 ```
 <h1>That's all for your order:</h1>
@@ -334,14 +335,14 @@ An final output example for ```views/payments/new.html.erb``` would be:
 
 
 <br><hr><br><br>
-### 12) Test out the gateway
+### 13) Test out the gateway
 You can now test the payment gateway using some testing cards that can be found
 in this link: https://developers.braintreepayments.com/reference/general/testing/ruby
 .
 
 <br><hr><br><br>
 
-### 13) Tune your create action for payment
+### 14) Tune your create action for payment
 Paypal would use 'nounce' to indicate a transaction is made between you and Paypal.
 You can use byebug to learn the return parameters before nouce, and after
 processing the payment.
@@ -378,14 +379,14 @@ processing the payment.
 
 <br><br>
 
-### 14) Save the transaction details locally
+### 15) Save the transaction details locally
 Now that you have the gateway running, you can work on creating columns for
 Payment model. Things like order_id, price, transaction_id can be documented
 on your side. You can go ahead and create columns for it.
 
 <br><hr><br><br>
 
-### 15) Done. You're up and running for Sandbox.
+### 16) Done. You're up and running for Sandbox.
 All right, now you're done.
 
 <br><hr><br><br>
