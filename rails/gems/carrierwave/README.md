@@ -33,7 +33,7 @@ $ rails generate migration add_photos_to_locations photos:json
 > set set the column type as text.
 >
 > ```
-> $ rails generate migration add_photos_to_locations photos:json
+> $ rails generate migration add_photos_to_locations photos:text
 > ```
 
 <br><hr><br><br>
