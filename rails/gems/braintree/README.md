@@ -96,7 +96,7 @@ $ rails g model payment
 
 ### 7) Set the route for payment MVC, only new and create
 ```
-resources payments, only: [:new, :create]
+resources :payments, only: [:new, :create]
 ```
 
 > **NOTE**:
