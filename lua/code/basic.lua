@@ -112,7 +112,6 @@ print(a[20]);
 -- Calling an invalid element
 print(a[30]); --> nil
 
-
 -- References
 c = {};
 c["a"] = 10;
@@ -135,3 +134,15 @@ end
 
 
 
+--[[
+Error, Exception, Handling
+]]--
+-- Assert error message if fails
+assert(print("Hello World"));
+
+-- Error Handling and Exception
+if pcall(assert(print(a)))
+    print("No error while running code");
+else
+    print("An error is raised");
+end
