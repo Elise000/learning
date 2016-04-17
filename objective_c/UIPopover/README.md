@@ -56,3 +56,4 @@ UIView controller.
 1. http://stackoverflow.com/questions/25189246/how-to-dismiss-uipopover-from-a-button-in-the-popover-with-ios-8-xcode-6-beta
 2. http://stackoverflow.com/questions/2777438/how-to-tell-if-uiviewcontrollers-view-is-visible
 3. http://stackoverflow.com/questions/32818297/how-to-correct-uipopovercontroller-is-deprecated-warning-message
+4. http://pinkstone.co.uk/how-to-create-popovers-in-ios-9/
