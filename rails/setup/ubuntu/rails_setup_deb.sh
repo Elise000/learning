@@ -4,7 +4,7 @@
 function install_postgresql {
 	echo '== Install Postgresql =='
 
-	local user=$1
+	user=$1
 
 	sudo apt-get update -y
 	sudo apt-get install -y postgresql-common postgresql-contrib
@@ -44,11 +44,15 @@ function install_rvm {
 	gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 	curl -L https://get.rvm.io | bash -s stable
 	source ~/.rvm/scripts/rvm
-	echo 'source ~/.rvm/scripts/rvm' >> ~/.bashrc
+
+	rvm_path='source ~/.rvm/scripts/rvm'
+	echo $rvm_path >> ~/.bashrc
+	echo $rvm_path >> ~/.zshrc
 }
 
 function install_ruby {
-	local version=$1
+	version=$1
+
 	rvm install $version
 	rvm use $version --default
 }
@@ -59,8 +63,8 @@ function install_bundler {
 }
 
 function setup_git {
-	local username=$1
-	local email=$2
+	username=$1
+	email=$2
 
 	git config --global color.ui true
 	git config --global user.name $username
@@ -96,7 +100,7 @@ read user_email
 
 
 # Inquire Ruby Version to be installed
-OPTIONS="2.2.3 2.2.4"
+OPTIONS="2.2.4 2.2.3"
 echo "Please select your desired ruby version option. "
 select opt in $OPTIONS; do
 	case $opt in
@@ -131,4 +135,7 @@ install_rails
 
 # Done
 source ~/.bashrc
-echo "Setup Completed. You should try generate a rails app to test out."
+echo "Setup Completed."
+echo "Close the terminal and open a new one."
+echo "You should be able to use ruby from your local version. Type: "
+echo "'which ruby' to verify the source file."
