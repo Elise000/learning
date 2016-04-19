@@ -23,8 +23,15 @@ function install_postgresql {
 
 
 function setup_ssh {
-	echo -e "\n\n\n" | ssh-keygen -t rsa
-	ssh-add ~/.ssh/id_rsa
+	SSH_PATH=~/.ssh
+
+	if [ -a $SSH_PATH ]; then
+	else
+		mkdir $SSH_PATH
+	fi
+
+	ssh-keygen -t rsa -N "" -f $SSH_PATH/id_rsa
+	ssh-add $SSH_PATH/id_rsa
 }
 
 function install_dependencies {
