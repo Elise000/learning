@@ -4,6 +4,7 @@ This guide is setting up ***UIAlertViewController*** as a step to move on from *
 
 
 ## Conventional Controller
+### Objective C
 ```
         _actionSheet = [UIAlertController
                           alertControllerWithTitle:nil
@@ -36,11 +37,24 @@ This guide is setting up ***UIAlertViewController*** as a step to move on from *
 ```
 
 <br>
+### Swift
+```
+        let alert  = UIAlertController(title: "Hello World",
+                                       message: "This is my first app!",
+                                       preferredStyle: .Alert)
+        
+        let action = UIAlertAction(title: "Awesome",
+                                   style: .Default,
+                                   handler: nil)
+        
+        alert.addAction(action)
+        
+        presentViewController(alert, animated: true, completion: nil);
+```
 
-----------
-<br><br>
+<br><hr><br><br>
 
-## App Delegate Controller
+## App Delegate Controller (Objective C)
 ```
     UIAlertController *alert = [UIAlertController
                                   alertControllerWithTitle:NSLocalizedString(@"Internal Error", nil)
