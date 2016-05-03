@@ -27,13 +27,13 @@ animator.
     
     [super viewDidLoad];
 }
-
 ```
 
 <br><hr><br><br>
 
 #### 3) To add the animation to object, you can use ```addItem``` method
 ```
+    // i) Create view to be animated
     UIView *block = [[UIView alloc] initWithFrame:CGRectMake(self.xPosition,
                                                              self.yPosition,
                                                              self.blockSize,
@@ -41,6 +41,8 @@ animator.
     block.backgroundColor = [self generateRandomColor];
     [self.view addSubview:block]; //view must be added before behavior addition
 
+
+    // ii) Add the view into gravity animator
     [self.gravity addItem:block];
 ```
 
@@ -56,4 +58,3 @@ animator.
 2. http://www.ios-blog.co.uk/tutorials/objective-c/ios-7-how-to-use-uigravitybehavior/
 3. http://www.teehanlax.com/blog/introduction-to-uikit-dynamics/
 4. https://www.objc.io/issues/5-ios7/collection-views-and-uidynamics/
-5. 
