@@ -26,7 +26,6 @@ function setup_ssh {
 	SSH_PATH=~/.ssh
 
 	if [ -a $SSH_PATH ]; then
-	else
 		mkdir $SSH_PATH
 	fi
 
