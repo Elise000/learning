@@ -22,7 +22,7 @@ You can read the [no action segue](https://github.com/hollowaykeanho/learning/tr
 
 
 <br><br>
-### 2) give the segue an identifier
+### 2) Give the segue an identifier
 Give it via the attribute inspector.
 
 <br><br>
@@ -31,7 +31,7 @@ Follow the [MBProgressHUD](https://github.com/jdg/MBProgressHUD) on installing
 the 2 source codes.
 
 <br><br>
-### 4) attach the IBAction and deploy the loading bar with segue indicator
+### 4) Attach the IBAction and deploy the loading bar with segue indicator
 
 <br>
 #### Objective-C
