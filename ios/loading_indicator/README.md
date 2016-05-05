@@ -55,7 +55,9 @@ the 2 source codes.
         
         // This is programmatically triggering a segue
         // Ensures the identifier is the same inside the storyboard.
-        [self performSegueWithIdentifier:@"login" sender:self];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self performSegueWithIdentifier:@"login" sender:self];
+        });
     });
     
 }
