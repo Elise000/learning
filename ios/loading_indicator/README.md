@@ -15,7 +15,7 @@ its simplicity.
 
 <br><br>
 ### 1) Create a no-action segue
-You can view the [no action segue](https://github.com/hollowaykeanho/learning/tree/master/ios/create_segue_with_no_action).
+You can read the [no action segue](https://github.com/hollowaykeanho/learning/tree/master/ios/create_segue_with_no_action) guide.
 
 <br>
 ![Create non-action segue](https://lh3.googleusercontent.com/LFm1xMf9XoOZbYO3kUhSwArhh0ilFRHQTxM6INSPcllEjJ5K2f-2GpLUo-Rvqi4_OmzLdzxPu8fllDDhdY4wQ_jxf2v0Z_M-Ll1I-z8EN9nuMSqvSdAMDZiwdPFCPKVmztdluip1emPDNpJ-6SY5ktBZd8vHKwGeBekhIVIbJUJkJMNzjEq59Ef3QDMaQGqi8gzqoPv3dGYu5_MbRX5nv_frya8SJnnv5BXnA57d3aGl_nnYi_OoKH3SrbhBqU6vcwMsCujC3dt9JurS8tai3jk0tbre3oG25pDzpapY0qOLiWPfHhiMT43emX1bxpETNRBAY7yD_Iv75Q-dwEILM3GJ99ZYVNmbLagVM7-3ARWWWg1yGUKnpQdncTxUl0lYDyQnZPSog3VH1-WGigZHHTooeywRg40xUsGMHCCE4tYl4ce0s4942a8o6ErCEByr9LaoK5yFCL017ECYpyC9bn65_5F5U927mcyK6jwwtBJowxFSlFdaFrnZTmXOmsQOX0Fq0jIMQgbTj8nouhc-FUMX5KrTF6ixrsQq3disY1otUTZAuAeq4djnIbTlqqk6XHt-Zw=w480-h312-no)
@@ -23,7 +23,7 @@ You can view the [no action segue](https://github.com/hollowaykeanho/learning/tr
 
 <br><br>
 ### 2) give the segue an identifier
-You can give it via the attribute inspector.
+Give it via the attribute inspector.
 
 <br><br>
 ### 3) Install the MBProgressHUD
