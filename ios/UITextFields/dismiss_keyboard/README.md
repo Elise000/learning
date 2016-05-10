@@ -4,8 +4,9 @@ implementation. Keyboard dismissed by tapping spaces outside the keyboards and
 return key can be done using the following implementation.
 
 ## Codes
-### Objective-C
-
+### For normal UIView
+#### Objective-C
+On normal UIView, you can use the built-in function as follows:
 ```
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     NSLog(@"touchesBegan:withEvent:");
@@ -93,6 +94,30 @@ Hence, the final code will looks something like this:
 
 ```
 
+<br><hr><br><br>
 
+### Case for UITableView
+For UITableViewController, you'll need to use UITapGestureRecognizer to execute
+the dismiss due to UIScrollView intervention inside UITableViewController.
+
+<br>
+Then, attach the UITapGestureRecognizer to an IBAction to execute.
+
+<br>
+Example:
+
+<br>
+#### Objective-C
+
+```
+- (IBAction)TablePressed:(id)sender
+{
+    if(![self.view endEditing:NO]) {
+        [self.view endEditing:YES];
+    }
+}
+```
+
+<br><hr><br><br>
 ## References
 1. http://stackoverflow.com/questions/3573955/how-to-hide-the-keyboard-when-i-press-return-key-in-a-uitextfield
